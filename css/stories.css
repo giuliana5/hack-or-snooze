@@ -1,5 +1,4 @@
 /* Lists of stories */
-
 .stories-list {
   margin: 20px 5px;
 }
@@ -18,7 +17,6 @@
 
 
 /* Individual stories */
-
 .story-link {
   color: black;
   font-size: 0.85rem;
@@ -36,4 +34,36 @@
 
 .story-user {
   display: block;
+}
+
+/*story favorite checkbox*/
+.star {
+  visibility: hidden;
+  font-size: 16px;
+}
+
+.star:before {
+  content: "\2606";
+  position: relative;
+  visibility: visible;
+  top: -4px;
+}
+
+.star:checked:before {
+  position: relative;
+  content: "\2605";
+  color: #ffcc00;
+}
+
+/*story remove button*/
+.remove {
+  font-size: 8px;
+  border: none;
+  background-color: transparent;
+  color: red;
+  vertical-align: top;
+}
+
+.remove:hover {
+  font-weight: bold;
 }
